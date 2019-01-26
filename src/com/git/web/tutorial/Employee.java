@@ -18,6 +18,7 @@ public class Employee implements Serializable {
 	private String employeeId;
 	private String employeeName;
 	private String employeeDesignation;
+	private String employeeDepartment;
 
 	/**
 	 * 
@@ -30,11 +31,12 @@ public class Employee implements Serializable {
 	 * @param employeeId
 	 * @param employeeName
 	 */
-	public Employee(String employeeId, String employeeName, String employeeDesignation) {
+	public Employee(String employeeId, String employeeName, String employeeDesignation, String employeeDepartment) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.employeeDesignation = employeeDesignation;
+		this.employeeDepartment = employeeDepartment;
 	}
 
 	/**
@@ -77,6 +79,20 @@ public class Employee implements Serializable {
 	 */
 	public void setEmployeeDesignation(String employeeDesignation) {
 		this.employeeDesignation = employeeDesignation;
+	}
+
+	/**
+	 * @return the employeeDepartment
+	 */
+	public String getEmployeeDepartment() {
+		return employeeDepartment;
+	}
+
+	/**
+	 * @param employeeDepartment the employeeDepartment to set
+	 */
+	public void setEmployeeDepartment(String employeeDepartment) {
+		this.employeeDepartment = employeeDepartment;
 	}
 	
 	
