@@ -17,6 +17,7 @@ public class Employee implements Serializable {
 	private static final long serialVersionUID = 8958558763922192936L;
 	private String employeeId;
 	private String employeeName;
+	private String employeeDesignation;
 
 	/**
 	 * 
@@ -29,10 +30,11 @@ public class Employee implements Serializable {
 	 * @param employeeId
 	 * @param employeeName
 	 */
-	public Employee(String employeeId, String employeeName) {
+	public Employee(String employeeId, String employeeName, String employeeDesignation) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
+		this.employeeDesignation = employeeDesignation;
 	}
 
 	/**
@@ -61,6 +63,20 @@ public class Employee implements Serializable {
 	 */
 	public void setEmployeeName(String employeeName) {
 		this.employeeName = employeeName;
+	}
+
+	/**
+	 * @return the employeeDesignation
+	 */
+	public String getEmployeeDesignation() {
+		return employeeDesignation;
+	}
+
+	/**
+	 * @param employeeDesignation the employeeDesignation to set
+	 */
+	public void setEmployeeDesignation(String employeeDesignation) {
+		this.employeeDesignation = employeeDesignation;
 	}
 	
 	
