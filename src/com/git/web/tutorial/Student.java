@@ -18,6 +18,7 @@ public class Student implements Serializable {
 	private String studentId;
 	private String studentName;
 	private String studentAddress;
+	private String studentGrade;
 
 	/**
 	 * 
@@ -30,11 +31,12 @@ public class Student implements Serializable {
 	 * @param studentId
 	 * @param studentName
 	 */
-	public Student(String studentId, String studentName, String studentAddress) {
+	public Student(String studentId, String studentName, String studentAddress, String studentGrade) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.studentAddress = studentAddress;
+		this.studentGrade = studentGrade;
 	}
 
 	/**
@@ -77,6 +79,20 @@ public class Student implements Serializable {
 	 */
 	public void setStudentAddress(String studentAddress) {
 		this.studentAddress = studentAddress;
+	}
+
+	/**
+	 * @return the studentGrade
+	 */
+	public String getStudentGrade() {
+		return studentGrade;
+	}
+
+	/**
+	 * @param studentGrade the studentGrade to set
+	 */
+	public void setStudentGrade(String studentGrade) {
+		this.studentGrade = studentGrade;
 	}
 	
 }
