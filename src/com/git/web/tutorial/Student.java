@@ -17,6 +17,7 @@ public class Student implements Serializable {
 	private static final long serialVersionUID = 8960390901102929463L;
 	private String studentId;
 	private String studentName;
+	private String studentAddress;
 
 	/**
 	 * 
@@ -29,10 +30,11 @@ public class Student implements Serializable {
 	 * @param studentId
 	 * @param studentName
 	 */
-	public Student(String studentId, String studentName) {
+	public Student(String studentId, String studentName, String studentAddress) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
+		this.studentAddress = studentAddress;
 	}
 
 	/**
@@ -61,6 +63,20 @@ public class Student implements Serializable {
 	 */
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+	}
+
+	/**
+	 * @return the studentAddress
+	 */
+	public String getStudentAddress() {
+		return studentAddress;
+	}
+
+	/**
+	 * @param studentAddress the studentAddress to set
+	 */
+	public void setStudentAddress(String studentAddress) {
+		this.studentAddress = studentAddress;
 	}
 	
 }
