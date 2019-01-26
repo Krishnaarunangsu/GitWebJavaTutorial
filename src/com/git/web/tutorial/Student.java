@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author arunangsu.sahu
+ * @since 26/01/2019
  *
  */
 public class Student implements Serializable {
