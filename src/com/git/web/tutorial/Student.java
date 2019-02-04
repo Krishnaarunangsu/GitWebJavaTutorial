@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * @author arunangsu.sahu
  * @since 26/01/2019
- * V1.5
+ * V1.6
  */
 public class Student implements Serializable {
 
